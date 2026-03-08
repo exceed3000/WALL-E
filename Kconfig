@@ -1,0 +1,87 @@
+menu "WALL-E Configuration"
+
+config EXAMPLE_WIFI_SSID
+    string "WiFi SSID"
+    default ""
+
+config EXAMPLE_WIFI_PASSWORD
+    string "WiFi Password"
+    default ""
+
+# Audio Output (I2S1 - MAX98357A DAC/Amp)
+config I2S1_WS_PIN
+    int "I2S1 WS Pin (Audio Out)"
+    default 45
+
+config I2S1_SCK_PIN
+    int "I2S1 SCK Pin (Audio Out)"
+    default 47
+
+config I2S1_SD_PIN
+    int "I2S1 SD Pin (Audio Out)"
+    default 48
+
+# Audio Input (I2S0 - Digital MEMS Mic)
+config I2S0_SD_PIN
+    int "I2S0 SD Pin (Audio In)"
+    default 35
+
+config I2S0_WS_PIN
+    int "I2S0 WS Pin (Audio In)"
+    default 36
+
+config I2S0_SCK_PIN
+    int "I2S0 SCK Pin (Audio In)"
+    default 37
+
+# Servo control pins - 7 servos
+config SERVO_1_GPIO_PIN
+    int "Servo 1 GPIO Pin"
+    default 18
+
+config SERVO_2_GPIO_PIN
+    int "Servo 2 GPIO Pin"
+    default 8
+
+config SERVO_3_GPIO_PIN
+    int "Servo 3 GPIO Pin"
+    default 9
+
+config SERVO_4_GPIO_PIN
+    int "Servo 4 GPIO Pin"
+    default 10
+
+config SERVO_5_GPIO_PIN
+    int "Servo 5 GPIO Pin"
+    default 46
+
+config SERVO_6_GPIO_PIN
+    int "Servo 6 GPIO Pin"
+    default 4
+
+config SERVO_7_GPIO_PIN
+    int "Servo 7 GPIO Pin"
+    default 5
+
+# Motor driver control pins
+config MOTOR_A_IN1_PIN
+    int "Motor A IN1 Pin"
+    default 21
+
+config MOTOR_A_IN2_PIN
+    int "Motor A IN2 Pin"
+    default 15
+
+config MOTOR_B_IN1_PIN
+    int "Motor B IN1 Pin"
+    default 16
+
+config MOTOR_B_IN2_PIN
+    int "Motor B IN2 Pin"
+    default 17
+
+config MOTOR_DRIVER_PWM_PIN
+    int "Motor Driver PWM Pin (optional, -1 to disable)"
+    default -1
+
+endmenu
