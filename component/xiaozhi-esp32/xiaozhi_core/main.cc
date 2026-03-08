@@ -11,7 +11,7 @@
 
 #define TAG "main"
 
-extern "C" void app_main(void)
+extern "C" void xiaozhi_app_main(void)
 {
     // Initialize NVS flash for WiFi configuration
     esp_err_t ret = nvs_flash_init();
